@@ -1,0 +1,506 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    min-height: 1200%;
+
+background-image: url("black");
+
+}
+
+
+body{
+   
+    background-image: url('black');
+    background-size: 60rem;
+}
+
+
+*{
+    font-family: 'Nunito, sans-serif';
+    margin: 0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    
+    
+    
+}
+html{
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    
+}
+
+section{
+    padding:2rem 9%;
+    
+}
+
+
+
+
+header{
+position: fixed;
+top:0; left: 0; right: 0;
+background: #fff;
+padding:1 rem 7%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;
+box-shadow: var(--box-shadow);
+}
+header .logo{
+
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+header .logo i{
+    color:var(--green);
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--black);
+}
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--green);
+    
+}
+header .icon i,
+header .icon a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+header .icon i:hover,
+header .icon a:hover{
+
+
+    color: #fff;
+    background: var(--green);
+    transform: rotate(360deg);
+
+}
+header.icon #menu-bars{
+    display: none;
+}
+
+
+    html{
+        font-size: 55%;
+        
+    }
+    header{
+        padding:1rem 2rem;
+    }
+
+
+
+
+
+header .icon #menu-bars {
+    display: inline-block;
+}
+
+header .navbar{
+    position: absolute;
+    top:100%; left:0; right: 0;
+    background: #fff;
+    border-top: .1rem solid rgba(0,0,0,.2);
+    border-bottom: .1rem solid rgba(0,0,0,.2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 0 0);
+}
+
+
+header .navbar.active{
+    clip-path: polygon(0 0 ,100% 0,100% 100%, 0% 100%);
+}
+
+
+
+
+header .navbar a{
+
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: #eee;
+}
+
+
+    html{
+        font-size: 50%;
+        
+    }
+    #search-form{
+
+        position: fixed;
+        top:-110%; left:0;
+        height: 100%; width: 100%;
+        z-index: 1004;
+        background: rgba(0,0,0,.8);
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        padding: 0 1rem;
+
+    }
+    
+
+ #search-form.active{
+ top:0;
+}
+                
+    
+    #search-form  #search-box{
+        width:50rem;
+        border-bottom: .1rem solid #fff;
+        padding: 2rem 0;
+        color: #fff;
+        font-size: 3rem;
+        text-transform: none;
+        background: none;
+    }
+    #search-form  #search-box::placeholder{
+
+color: #fff;
+
+    }
+   #search-form :hover{
+
+
+        color: var(--green);
+    }
+    #search-form label{
+
+        font-size: 30px;
+    }
+    #search-form #close
+    
+    {
+        position: absolute;
+        color: #fff;
+        cursor: pointer;
+        top:2rem; right: 3rem;
+        font-size: 5rem;
+
+
+    }
+
+.home .home-slider .slide{
+
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50rem;
+    padding-top: 10rem;
+}
+
+.home .home-slider .slide .content span{
+    font-size: 2.5rem;
+    color:var(--green)
+}
+.home .home-slider .slide .content h1{
+
+
+    color:var(--black);
+    font-size: 5rem;
+   
+    
+    
+    
+}
+.home .home-slider .slide .content p{
+
+    color:var(--light-color);
+    font-size:  2rem;
+    padding: 10px;
+}
+.btn{
+margin-top: 1rem;
+display: inline-block;
+font-size: 1.7rem;
+color: #fff;
+background: var(--black);
+border-radius: .5rem;
+ cursor: pointer;
+ padding: .8rem 3rem;
+
+}
+.btn:hover{
+
+    background:red;
+}
+.home .home-slider .slide .content{
+
+    margin-left: 50px;
+}
+
+#mm{
+
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+     cursor: pointer;
+     padding: .8rem 3rem;
+
+}
+
+.tt{
+position: absolute;
+    font-size: 30px;
+    margin-left: 100px ;
+    color: azure;
+    background:yellowgreen;
+   
+    
+
+    
+
+}
+#mm:hover{
+
+    background:burlywood;
+}
+
+.stars{
+
+margin-top: 1rem;
+    font-size: 1.7rem;
+    color:palevioletred;
+    background:var(--black)
+    border-radius: .3rem;
+    cursor: pointer;
+    padding: .5rem 1rem;
+}
+
+.about .row  .image img{
+
+
+    height: 500px; 
+    position: relative;
+    margin-left: 20rem;
+    width: 70%;
+    
+}
+.about .subheading{
+
+font-size: 60px;
+position: relative;
+margin-left: 50rem;
+    color: orangered;
+}
+.about .heading{
+    font-size: 30px;
+    position: relative;
+    margin-left: 52rem;
+    color: mediumvioletred;
+    
+
+}
+.about .content{
+position: relative;
+margin-left: 155px;
+font-size: large;
+color:black;
+
+}
+.icons-container .icons{
+    color: crimson;
+    font-size: 3rem;
+
+    
+
+
+}
+.about .row .content h1{
+
+font-size: 5rem;
+color: sienna;
+
+
+}
+
+
+.menu .subheading{
+position: relative;
+margin-left: 400px;;
+    font-size: 8rem;
+    color: #666;
+}
+
+.menu .row   img{
+
+    height: 800px; 
+    position: relative;
+    margin-left: 20rem;
+    width: 70%;
+}
+.menu .heading{
+    font-size: 40px;
+    position: relative;
+    margin-left: 52rem;
+    color-scheme: var(--black);
+
+}
+
+
+ .review .user img
+{
+
+    
+    
+   
+
+    
+}
+.review .sub-heading{
+   
+    position: relative;
+margin-left: 350px;;
+    font-size: 8rem;
+    color: deeppink;
+
+}
+.review .heading{
+
+    font-size: 40px;
+    position: relative;
+    margin-left: 52rem;
+    color: tomato;
+   
+
+}
+
+
+.review .users{
+    font-size: 3rem;
+    color: black;
+}
+.review .star{
+
+    color: red;
+}
+.review p{
+
+
+    font-size: 2.3rem;
+  inline-size: 40rem;
+}
+.kj{
+
+    font-size: 2.3rem;
+    inline-size: 40rem;
+   margin-left: 62rem;
+   margin-top: -20rem;
+   color: sienna;
+   
+    
+    
+
+
+
+}
+.oo{
+
+    font-size: 2.3rem;
+    inline-size: 40rem;
+   margin-left: 112rem;
+   margin-top: -16rem;
+   color: blue;
+
+}
+
+
+
+.order .sub-heading{
+
+    position: relative;
+    margin-left: 380px;;
+        font-size: 8rem;
+        color: deeppink;
+
+
+
+}
+.order .heading{
+
+
+
+
+    font-size: 40px;
+    position: relative;
+    margin-left: 52rem;
+    color: darkred;
+
+}
+
+
+.order .inputbox {
+position: relative;
+font-size: 5rem;
+color: coral;
+margin-left: 40rem;
+margin-top: 5rem;
+
+
+}
+.footer .credit{
+
+
+
+    text-align: center;
+    border-top: 1rem solid rgba(0,0,0,.8);
+    font-size: 5rem;
+    padding: 7rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+
+
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
